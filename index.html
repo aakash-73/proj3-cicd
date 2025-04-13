@@ -90,7 +90,7 @@
 
 <body class="d-flex align-items-center justify-content-center vh-100">
     <div class="container" id="welcome-screen">
-        <h2 class="mb-4">Welcome to Participation Form V2 CDK</h2>
+        <h2 class="mb-4">Welcome to Participation Form SDK</h2>
         <button class="btn btn-custom w-100" onclick="startForm()">Start</button>
     </div>
 
@@ -176,7 +176,7 @@
                 };
                 console.log("Payload:", payload); 
 
-                const response = await fetch('https://ya9m6qvsv9.execute-api.us-east-2.amazonaws.com/dev/process-image', {
+                const response = await fetch('https://lpg7h9oy1k.execute-api.us-east-2.amazonaws.com/dev/process-image', {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify(payload)
