@@ -41,7 +41,7 @@ jobs:
           if [ -f lambda_function.py ]; then
             zip -r lambda_function.zip lambda_function.py
             aws lambda update-function-code \
-              --function-name ProcessImageFunction \
+              --function-name ProcessImageFunctionSDK \
               --zip-file fileb://lambda_function.zip
           else
             echo "Lambda function file not found."
@@ -54,7 +54,7 @@ jobs:
           if [ -f proj3_deployment_lambda.py ]; then
             zip -r proj3_deployment_lambda.zip proj3_deployment_lambda.py
             aws lambda update-function-code \
-              --function-name StartAmplifyDeployment \
+              --function-name SdkStartAmplifyDeployment \
               --zip-file fileb://proj3_deployment_lambda.zip
           else
             echo "proj3_deployment_lambda 2 file not found."
