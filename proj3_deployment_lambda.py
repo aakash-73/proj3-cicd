@@ -2,7 +2,7 @@ import json
 import boto3
 import urllib.parse
 
-# CICD for proj3
+# CICD implementation for proj3 
 
 def lambda_handler(event, context):
     # Initialize the Amplify client

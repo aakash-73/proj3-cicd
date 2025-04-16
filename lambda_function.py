@@ -7,7 +7,7 @@ import mimetypes
 import concurrent.futures
 import logging
 
-# CICD for AWS Lambda
+# CICD implemenation for AWS Lambda 
 # Initialize AWS clients
 rekognition_client = boto3.client('rekognition')
 textract_client = boto3.client('textract')
