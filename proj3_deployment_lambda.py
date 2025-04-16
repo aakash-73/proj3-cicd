@@ -2,6 +2,8 @@ import json
 import boto3
 import urllib.parse
 
+# CICD for proj3
+
 def lambda_handler(event, context):
     # Initialize the Amplify client
     amplify_client = boto3.client('amplify')
